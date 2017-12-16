@@ -1,11 +1,23 @@
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
-.jumbotron {
-	background-color: #3cbec7;
+h1 {
+	text-align: center;
 }
 
-.container {
-	color: white;
+.jumbotron {
+	background-color: #A9D0F5;
+}
+
+#gif-form{
+	background-color: #A9D0F5;
+	padding: 10px;
+}
+
+.fandom {
+	margin: 10px;
+}
+
+#gifsView {
+	float: left;
 }

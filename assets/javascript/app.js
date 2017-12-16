@@ -7,8 +7,8 @@ function displayGifButtons(){
     $("#gifButtonsView").empty(); 
     for (var i = 0; i < fandoms.length; i++){
         var gifButton = $("<button>");
-        gifButton.addClass("action");
-        gifButton.addClass("btn btn-primary")
+        gifButton.addClass("fandom");
+        gifButton.addClass("btn")
         gifButton.attr("data-name", fandoms[i]);
         gifButton.text(fandoms[i]);
         $("#gifButtonsView").append(gifButton);
@@ -69,7 +69,7 @@ displayGifButtons();
 addNewButton();
 
 // EVENT LISTENERS
-$(document).on("click", ".action", displayGifs);
+$(document).on("click", ".fandom", displayGifs);
 $(document).on("click", ".image", function(){
     var state = $(this).attr('data-state');
     if ( state == 'still'){
